@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <title>PORTFOLIO</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style
+    .css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <div id="header">
+            <h1 class="pc title">ポートフォリオ</h1>
+            <div class="header_menu">
+                <div class="menu_about">
+                    <img src="img/menu_icon/flower-mark.png" alt="チューリップのアイコン">
+                    <h2>ABOUT</h2>
+                </div>
+
+                <div class="menu_history">
+                    <img src="img/menu_icon/book-mark.png" alt="本のアイコン">
+                    <h2>HISTORY</h2>
+                </div>
+
+                <div class="menu_skills">
+                    <img src="img/menu_icon/pencil-mark.png" alt="鉛筆のアイコン">
+                    <h2>SKILLS</h2>
+                </div>
+
+                <div class="menu_works">
+                    <img src="img/menu_icon/pc-mark.png" alt="ノートパソコンのアイコン">
+                    <h2>WORKS</h2>
+                </div>
+
+                <div class="menu_github">
+                    <img src="img/menu_icon/github-mark-white.png" alt="GitHubのアイコン">
+                    <h2>GitHub</h2>
+                </div>
+            </div>
+            <!--
+            <nav class="nav">
+                <ul class="nav_list">
+                    <li class="nav_item"><a href="#1">text</a></li>
+                    <li class="nav_item"><a href="#2">text</a></li>
+                    <li class="nav_item"><a href="#3">text</a></li>
+                    <li class="nav_item"><a href="#4">text</a></li>
+                </ul>
+            </nav>
+            -->
+    
+            <!-- ハンバーガーメニュー 
+            <div class="hamburger" id="js_hamburger">
+                <span class="hamburger_line hamburger_line-1"></span>
+                <span class="hamburger_line hamburger_line-2"></span>
+                <span class="hamburger_line hamburger_line-3"></span>
+            </div>
+            -->
+        </div>
+    </header>
+
+    <div id="contents">
+
+        <div id="space">
+        <div id="head_space"></div>
+            <div class="arch">
+                <div class="arch_bottom"></div>
+            </div>
+        </div>
+
+        <div id="about" class="center">        
+            <h2>ABOUT ME</h2>
+            
+            <div id="my_data">
+                <div id="me">
+                    <img id="photo" src="img/my-photo.jpg" alt="河野琴乃の写真">
+                    <p id="name">Kotono Kawano</p>
+                </div>
+
+                <div id="select_content" class="off">
+                    <div id="birthday"class="select_item bc_green off">
+                        <div class="select_inner">
+                            <img src="img/profile_icon/cake.png" alt="ケーキのアイコン">
+                            <h3>誕生日</h3>
+                            <p>1996年2月12日</p>
+                        </div>
+                    </div>
+
+                    <div id="birthplace" class="select_item bc_aqua off">
+                        <div class="select_inner">
+                            <img src="img/profile_icon/house.png" alt="家のアイコン">
+                            <h3>出身地</h3>
+                            <p>岡山県岡山市</p>
+                        </div>
+                    </div>
+
+                    <div id="favorite" class="select_item bc_pink off">
+                        <div class="select_inner">
+                            <img src="img/profile_icon/star.png" alt="星のアイコン">
+                            <h3>好きなもの</h3>
+                            <ul>
+                                <li>
+                                    <p>サンリオ</p>
+                                    <p>当ポートフォリオはサンリオの公式サイトを参考にしました。</p>
+                                </li>
+                                <li>紅茶</li>
+                                <li>辛い物</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div id="hobby" class="select_item bc_orange off">
+                        <div class="select_inner">
+                            <img src="img/profile_icon/music.png" alt="音符のアイコン">
+                            <h3>趣味</h3>
+                            <ul>
+                                <li>観劇</li>
+                                <li>サンリオピューロランドに行くこと</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="prof_content">
+                <div class="prof_item bc_green" onclick="birthday_on()">
+                    <div class="inner">
+                        <img class="birthday_icon" src="img/profile_icon/cake.png" alt="ケーキのアイコン">
+                        <p>誕生日</p>
+                    </div>
+                </div>
+
+                <div class="prof_item bc_aqua" onclick="birthplace_on()">
+                    <div class="inner">
+                        <img class="birthplace_icon" src="img/profile_icon/house.png" alt="家のアイコン">
+                        <p>出身地</p>
+                    </div>
+                </div>
+
+                <div class="prof_item bc_pink" onclick="favorite_on()">
+                    <div class="inner">
+                        <img src="img/profile_icon/star.png" alt="星のアイコン">
+                        <p>好きなもの</p>
+                    </div>
+                </div>
+
+                <div class="prof_item bc_orange" onclick="hobby_on()">
+                    <div class="inner">
+                        <img src="img/profile_icon/music.png" alt="音符のアイコン">
+                        <p>趣味</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+
+        <div id="history">
+            <h2>MY HISTORY</h2>
+
+            <dl id="history_content">
+                <dt class="year color_yellow">1996年</dt>
+                <dd>
+                    <h3 class="age color_yellow">0歳</h3>
+                    <p>1996年2月、岡山県で生まれる。</p>
+                </dd>
+
+                <dt class="year color_green">1997年</dt>
+                <dd>
+                    <h3 class="age color_green">1歳～14歳</h3>
+                    <p>岡山県岡山市で過ごす。13歳の頃から自宅のノートパソコンで毎日のように遊んでいた。</p>
+                    <p>この頃、はじめてHTMLに出会う。HP作成サイトで文字色や文字サイズの変更をして遊ぶことが多かった。</p>
+                </dd>
+                
+                <dt class="year color_eme">2011年</dt>
+                <dd>
+                    <h3 class="age color_eme">15歳</h3>
+                    <p>両親の仕事の都合で東京都へ引っ越す。</p>
+                </dd>
+                
+                <dt class="year color_aqua">2012年</dt>
+                <dd>
+                    <h3 class="age color_aqua">16歳～18歳</h3>
+                    <p>東京都内の公立高校へ進学。高校時代は陸上部と生徒会に所属。</p>
+                </dd>
+                
+                <dt class="year color_blue">2015年</dt>
+                <dd>
+                    <h3 class="age color_blue">19歳</h3>
+                    <p>高校卒業後、両親の仕事の都合で再び岡山県へ引っ越す。</p>
+                    <p>服飾の専門学校へ進学するため、服の勉強をしながら駄菓子屋のアルバイトで学費を貯める。</p>
+                </dd>
+                
+                <dt class="year color_purple">2016年</dt>
+                <dd>
+                    <h3 class="age color_purple">20歳～22歳</h3>
+                    <p>専門学校岡山ファッションスクールへ進学。</p>
+                    <p>ファッションクリエーター科で、服作りについて学ぶ。</p>
+                </dd>
+                
+                <dt class="year color_pink">2018年</dt>
+                <dd>
+                    <h3 class="age color_pink">22歳</h3>
+                    <p>専門学校卒業後、皮革小物製造会社<span onclick="move_marusho()">【株式会社丸昭】</span>へ入社。企画部へ配属。</p>
+                </dd>
+
+                <dt class="year color_red">2020年</dt>
+                <dd>
+                    <h3 class="age color_red">24歳</h3>
+                    <p>【株式会社丸昭】退社。</p>
+                    <p>同年、IT業界へのキャリアチェンジを目指し<span onclick="move_playing()">【株式会社Playing】</span>へ入社。</p>
+                </dd>
+
+                <dt class="year color_orange">2021年</dt>
+                <dd>
+                    <h3 class="age color_orange">25歳～26歳</h3>
+                    <p>HTML・CSS・JavaScript・JAVAなどを学ぶ。</p>
+                </dd>
+            </dl>
+        </div>
+
+        <div id="skills" class="center">
+            <h2>SKILLS</h2>
+
+            <div class="skill_list">
+                <ul>
+                    <li class="markup bc_green">HTML・CSS</li>
+                    <li class="js bc_aqua">JavaScript</li>
+                    <li class="java bc_pink">JAVA</li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="works" class="center">
+            <h2>WORKS</h2>
+            <ul class="my_work">
+                <li  class="work_item work_item_pc">
+                    <a data-fancybox="gallery" href="img/my_work/my_work1_long.png" data-caption="骨組みファイルの提示があったため、提示ファイルを元にクライアントの希望に沿ってカスタマイズしました。">
+                        <img class="work_item work_item_pc_img" src="img/my_work/my_work1.png" alt="作成サイトのスクリーンショット1"/>
+                    </a>
+                </li>
+                <li class="work_item work_item_sp">
+                    <a data-fancybox="gallery" href="img/my_work/my_work2_long.png" data-caption="1から作成。スマートフォンでの表示がメインで、「項目名をタップでタブが切り替わること」「下のほうの花のマークを押すとメッセージが追加で表示されること」という希望に沿って作成しました。">
+                        <img class="work_item work_item_sp_img" src="img/my_work/my_work2.png" alt="作成サイトのスクリーンショット2">
+                    </a>
+                </li>
+                
+            </ul>
+        </div>
+
+
+        <div id="github">
+            <img src="img/github-mark.png" alt="GitHubのマーク">
+            <p id="name">GitHub</p>
+        </div>
+
+        
+        <div class="top_btn">
+            <a href="#" class="top_link"></a>
+            <span class="top_text">TOP</span>
+        </div>
+    </div>
+
+    <footer>
+        <div id="footer">
+            <p>©2022 Kotono Kawano All Rights Reserved.</p>
+        </div>
+    </footer>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@400;500&display=swap" rel="stylesheet">
+    <script src="main.js"></script>
+    <script src="fancybox/fancybox.umd.js"></script>
+    <link rel="stylesheet" href="fancybox/fancybox.css"
+/>
+</body>
+</html>
