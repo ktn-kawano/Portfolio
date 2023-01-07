@@ -2,11 +2,11 @@
 <html lang="ja">
 <head>
     <title>PORTFOLIO</title>
+    <link rel="icon" href="favicon.ico">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
 </head>
 
 <body>
@@ -92,6 +92,8 @@
                             <img src="img/profile_icon/house.png" alt="家のアイコン">
                             <h3>出身地</h3>
                             <p>岡山県岡山市</p>
+                            <p class="sub_text">名産品:白桃やマスカット、ピオーネなど。</p>
+                            <p class="sub_text">南部は特に雨の日が少なく、温暖な気候です。</p>
                         </div>
                     </div>
 
@@ -102,7 +104,7 @@
                             <ul>
                                 <li>
                                     <p>サンリオ</p>
-                                    <p>当ポートフォリオはサンリオの公式サイトを参考にしました。</p>
+                                    <p class="sub_text">当ポートフォリオはサンリオの公式サイトを参考にしました。</p>
                                 </li>
                                 <li>紅茶</li>
                                 <li>辛い物</li>
@@ -124,30 +126,30 @@
             </div>
 
             <div class="prof_content">
-                <div class="prof_item bc_green" onclick="toggle_contents('#birthday')">
+                <div class="prof_item bc_green" onclick="toggle_contents('#birthday')" onmouseover="mouse_on('.prof_content #birthday_icon')" onmouseout="mouse_off('.prof_content #birthday_icon')">
                     <div class="inner">
-                        <img class="birthday_icon" src="img/profile_icon/cake.png" alt="ケーキのアイコン">
+                        <img id="birthday_icon" src="img/profile_icon/cake.png" alt="ケーキのアイコン" >
                         <p>誕生日</p>
                     </div>
                 </div>
 
-                <div class="prof_item bc_aqua" onclick="toggle_contents('#birthplace')">
+                <div class="prof_item bc_aqua" onclick="toggle_contents('#birthplace')" onmouseover="mouse_on('.prof_content #birthplace_icon')" onmouseout="mouse_off('.prof_content #birthplace_icon')">
                     <div class="inner">
-                        <img class="birthplace_icon" src="img/profile_icon/house.png" alt="家のアイコン">
+                        <img id="birthplace_icon" src="img/profile_icon/house.png" alt="家のアイコン">
                         <p>出身地</p>
                     </div>
                 </div>
 
-                <div class="prof_item bc_pink" onclick="toggle_contents('#favorite')">
+                <div class="prof_item bc_pink" onclick="toggle_contents('#favorite')" onmouseover="mouse_on('.prof_content #favorite_icon')" onmouseout="mouse_off('.prof_content #favorite_icon')">
                     <div class="inner">
-                        <img src="img/profile_icon/star.png" alt="星のアイコン">
+                        <img id="favorite_icon" src="img/profile_icon/star.png" alt="星のアイコン">
                         <p>好きなもの</p>
                     </div>
                 </div>
 
-                <div class="prof_item bc_orange" onclick="toggle_contents('#hobby')">
+                <div class="prof_item bc_orange" onclick="toggle_contents('#hobby')" onmouseover="mouse_on('.prof_content #hobby_icon')" onmouseout="mouse_off('.prof_content #hobby_icon')">
                     <div class="inner">
-                        <img src="img/profile_icon/music.png" alt="音符のアイコン">
+                        <img id="hobby_icon" src="img/profile_icon/music.png" alt="音符のアイコン">
                         <p>趣味</p>
                     </div>
                 </div>
@@ -224,8 +226,8 @@
 
             <div class="skill_list">
                 <ul>
-                    <li class="markup bc_green">HTML・CSS</li>
-                    <li class="js bc_aqua">JavaScript</li>
+                    <li class="markup bc_green" onmouseover="mouse_on()" onmouseout="mouse_off()">HTML・CSS</li>
+                    <li class="js bc_aqua" onmouseover="mouse_on()" onmouseout="mouse_off()">JavaScript</li>
                     <li class="java bc_pink">JAVA</li>
                 </ul>
             </div>
@@ -263,7 +265,7 @@
 
     <footer>
         <div id="footer">
-            <p>©2022 Kotono Kawano All Rights Reserved.</p>
+            <p>©2023 Kotono Kawano All Rights Reserved.</p>
         </div>
     </footer>
     
@@ -271,8 +273,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@400;500&display=swap" rel="stylesheet">
     <script src="main.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <script src="fancybox/fancybox.umd.js"></script>
-    <link rel="stylesheet" href="fancybox/fancybox.css"
-/>
+    <link rel="stylesheet" href="fancybox/fancybox.css"/>
 </body>
 </html>

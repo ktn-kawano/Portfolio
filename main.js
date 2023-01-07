@@ -44,3 +44,11 @@ window.addEventListener("scroll",function(){
         btn.classList.remove("btn_on");
     }
 });
+
+function mouse_on(hover){
+    document.querySelector(hover).classList.add("deco");
+}
+
+function mouse_off(hover){
+    document.querySelector(hover).classList.remove("deco");
+}
