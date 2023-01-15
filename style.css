@@ -843,7 +843,7 @@ p , li , h3{
     }
 
 
-    #history #history_content span{
+    #history #history_content .year span{
         display: none;
     }
 
