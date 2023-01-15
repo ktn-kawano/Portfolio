@@ -22,12 +22,13 @@ p , li , h3{
     display: none;
 }
 
+
+
 #contents h2{
     color: #fff;
     background-color: #606060;
     padding: 10px;
     width: fit-content;
-    text-align: center;
     border-radius: 5px;
     margin: 0 auto;
 }
@@ -67,6 +68,14 @@ p , li , h3{
     padding-top: 2px;
 }
 
+.hamburger{
+    display: none;
+}
+
+#nav{
+    display: none;
+}
+
 /*メニュー間の棒線*/
 .header_menu div::after{
     background-color: #fff;
@@ -98,7 +107,6 @@ p , li , h3{
 }
 
 .arch_bottom{
-    height: 50px;
     border-top-right-radius: 1000px 200px;
     border-top-left-radius: 1000px 200px;
     padding-left: 100px;
@@ -125,16 +133,17 @@ p , li , h3{
 
 #my_data{
     display: flex;
+    margin: 30px 0;
 }
 
 #me{
-    width: 25%;
+    width: fit-content;
     margin: 30px auto;
 }
 
 #photo{
-    width: 100%;
-    aspect-ratio: 1;
+    width: 260px;
+    height: 260px;
     border-radius: 50%;
 }
 
@@ -163,7 +172,6 @@ p , li , h3{
     top: 50%;
     left: 50%;
     transform: translateY(-50%) translateX(-50%);
-    -webkit-transform: translateY(-50%) translateX(-50%);
 }
 
 #select_content img , h3{
@@ -197,6 +205,15 @@ p , li , h3{
 }
 
 /*about内で選べる部分*/
+
+.select_arrow_sp{
+    display: none;
+}
+
+.prof_content_sp{
+    display: none;
+}
+
 .prof_content{
     display: flex;
     flex-wrap: wrap;
@@ -216,7 +233,6 @@ p , li , h3{
     top: 50%;
     left: 50%;
     transform: translateY(-50%) translateX(-50%);
-    -webkit-transform: translateY(-50%) translateX(-50%);
 }
 
 .prof_item img{
@@ -251,7 +267,7 @@ p , li , h3{
     margin-top: 50px;
 }
 
-#history_content span{
+#history_content dd span{
     background: linear-gradient(transparent 70%, #e5f2ff 70%);
 }
 
@@ -310,6 +326,7 @@ p , li , h3{
 #history .age{
     font-size: 25px;
     font-weight: 500;
+    padding: 0;
 }
 
 
@@ -337,13 +354,24 @@ p , li , h3{
 #skills li{
     list-style: none;
     width: 170px;
-    height: 190px;
-    border-radius: 50% 50% 0 0;
+    height: 170px;
     text-align: center;
     font-weight: 600;
     font-size: 25px;
     margin: 50px 30px;
-    line-height:230px;
+    line-height:170px;
+}
+
+#skills ul :nth-child(1){
+    border-radius: 44% 56% 70% 30% / 30% 55% 45% 70%;
+}
+
+#skills ul :nth-child(2){
+    border-radius: 78% 22% 53% 47% / 71% 55% 45% 29%;
+}
+
+#skills ul :nth-child(3){
+    border-radius: 49% 51% 64% 36% / 56% 79% 21% 44%;
 }
 
 
@@ -471,7 +499,6 @@ p , li , h3{
     top: 50%;
     left: 50%;
     transform: translateY(-50%) translateX(-50%);
-    -webkit-transform: translateY(-50%) translateX(-50%);
 }
 
 
@@ -533,4 +560,326 @@ p , li , h3{
 
 .color_orange{
     color: #efae45;
+}
+
+
+/*メディアクエリ*/
+@media screen and (max-width:900px) {
+    #header {
+        padding: 10px 0;
+    }
+
+    #head_space {
+        height: 120px;
+    }
+
+    #header img{
+        width: 15px;
+        height: 15px;
+        margin: auto 0;
+    }
+
+    #header h2{
+        font-size: 13px;
+        font-weight: 500;
+        padding-left: 5px;
+    }
+
+    #my_data{
+        margin: 20px 0;
+    }
+
+    #photo {
+        width: 150px;
+        height: 150px;
+    } 
+
+    #me{
+        height: fit-content;
+        margin: auto;
+    }
+
+    #me p{
+        padding-top: 20px;
+    }
+
+    .prof_item{
+        margin: 0 30px 10px 30px;
+    }
+
+    #history .year, #history .age {
+        font-size: 20px;
+        padding: 0;
+    }
+
+    #history p {
+        font-size: 14px;
+    }
+
+    #skills li{
+        width: 150px;
+        height: 150px;
+        font-size: 80%;
+        line-height: 150px;
+        margin: 30px;
+    }
+
+    #works .work_item_pc{
+        width: 40%;
+    }
+
+    #works .work_item_sp {
+        width: 30%;
+    }
+}
+
+@media screen and (max-width:650px) {
+    #header{
+        height: fit-content;
+        padding: 0;
+        height: 60px;
+        display: flex;
+    }
+
+    #header h1{
+        padding: 5px 0 5px 20px;
+        text-align: left;
+        font-size: 25px;
+        line-height: 50px;
+    }
+
+    #header .header_menu{
+        display: none;
+    }
+
+    #nav {
+        display: block;
+        width: 130px;
+        font-size: 15px;
+        background-color: #e383a8;
+        border-radius: 0 0 0 10px;
+    }
+
+    .nav_list{
+        padding-top: 70px;
+    }
+
+    #nav ul{
+        list-style: none;
+        font-size: 17px;
+    }
+
+    .nav_item{
+        color: #fff;
+        padding: 5px;
+        transition: all 0.5s;
+    }
+
+    .nav_off{
+        position: fixed;
+        right: -100%;
+        transition: all 0.5s;
+    }
+
+    .nav_on{
+        position: fixed;
+        right: 0;
+        transition: all 0.5s;
+    }
+
+    #header .hamburger{
+        display: block;
+        width: 38px;
+        height: 38px;
+        margin: auto 10px auto 0;
+        flex-shrink: 0;
+    }
+
+    .hamburger_line{
+        display: block;
+        width:65%;
+        height: 2px;
+        background-color: #fff;
+        margin: 0 auto;
+    }
+
+    .hamburger_line-1{
+        position: relative;
+        top:8px;
+        transition: all 0.5s;
+    }
+
+    .hamburger_line-2{
+        position: relative;
+        top:16px;
+        transition: all 0.5s;
+    }
+
+    .hamburger_line-3{
+        position: relative;
+        top:24px;
+        transition: all 0.5s;
+    }
+
+    .nav_open1{
+        transform: rotate(45deg);
+        top: 18px;
+    }
+
+    .nav_open2{
+        width: 0;
+    }
+
+    .nav_open3{
+        transform: rotate(-45deg);
+        top: 14px;
+    }
+
+    #head_space{
+        height: 60px;
+    }
+
+    .arch {
+        height: 50px;
+    }
+
+    #about,#history{
+        width: 80%;
+    }
+
+    #about{
+        padding-bottom: 50px;
+    }
+
+    #my_data{
+        display: block;
+        width: 80%;
+        margin: auto;
+        position: relative;
+    }
+
+    #me{
+        margin-bottom: 20px;
+    }
+
+    #me p{
+        padding: 0;
+    }
+
+    .prof_content{
+        display: none;
+    }
+
+    .prof_item_sp {
+        width:30px;
+        height: 30px;
+        margin: 20px 0 0 0;
+        border-radius: 50%;
+    }
+
+    .prof_content_sp {
+        display: flex;
+        width: 50%;
+        margin: auto;
+        justify-content: space-between;
+    }
+
+    .prof_content_sp button{
+        border: none;
+        background-color: transparent;
+        padding: 0;
+    }
+
+    #select_content{
+        width: 100%;
+        display: block;
+        overflow: hidden;
+    }
+
+    #select_content_set{
+        display: flex;
+        position: relative;
+    }
+
+    #select_content .select_item{
+        width: 100%;
+        height: 300px;
+        display: block;
+        flex-shrink: 0;
+        padding: 0;
+    }
+
+    .select_inner{
+        padding: 20px 0;
+    }
+
+    .select_arrow_sp{
+        display: block;
+        border: none;
+        background-color:  transparent;
+        width: fit-content;
+        height: fit-content;
+        border-radius: 50%;
+    }
+
+    #select_content .select_arrow_sp img{
+        padding: 0;
+        width: 20px;
+        height: 20px;
+    }
+
+    .arrow_left{
+        position: absolute;
+        z-index: 10;
+        left: -4%;
+        top: 68%;
+    }
+
+    .arrow_right{
+        position: absolute;
+        z-index: 10;
+        right: -4%;
+        top: 68%;
+    }
+
+
+    #history #history_content span{
+        display: none;
+    }
+
+    #skills ul{
+        display: block;
+        width: 50%;
+        margin: auto;
+    }
+
+    #skills ul li{
+        width:100%;
+        height: 50px;
+        line-height: 50px;
+        margin: 10px auto;
+    }
+
+    #works .my_work {
+        display: block;
+        margin: 0;
+        padding: 0;
+    }
+
+    #works .work_item_pc {
+        width: 80%;
+        margin: auto;
+        padding: 20px;
+    }
+
+    #works .work_item_sp {
+        width: 60%;
+        margin: auto;
+        padding: 20px;
+    }
+
+    #footer p {
+        white-space: nowrap;
+    }
+
 }

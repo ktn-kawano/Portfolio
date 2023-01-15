@@ -52,3 +52,18 @@ function mouse_on(hover){
 function mouse_off(hover){
     document.querySelector(hover).classList.remove("deco");
 }
+
+function nav_open(){
+    document.querySelector("#js_hamburger > .hamburger_line-1").classList.toggle("nav_open1");
+    document.querySelector("#js_hamburger > .hamburger_line-2").classList.toggle("nav_open2");
+    document.querySelector("#js_hamburger > .hamburger_line-3").classList.toggle("nav_open3");
+    
+    document.querySelector("#nav").classList.toggle("nav_off");
+    document.querySelector("#nav").classList.toggle("nav_on");
+}
+
+function move_contents(slide){
+    var content = document.querySelector("#select_content_set");
+    content.style.left=slide;
+    content.style.transition="all 0.5s";
+}
